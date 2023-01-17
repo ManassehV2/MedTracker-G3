@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj": {}
+    "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {
+    "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
         "projectName": "MedAdvisor.Commons",
-        "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
-        "packagesPath": "C:\\Users\\jt272\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jt272\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,21 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj": {
+    "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj",
         "projectName": "MedAdvisor.DataAccess.MySql",
-        "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj",
-        "packagesPath": "C:\\Users\\jt272\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.DataAccess.MySql\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jt272\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,8 +93,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj": {
-                "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj"
+              "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj"
               }
             }
           }
@@ -156,21 +156,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj": {
+    "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj",
         "projectName": "MedAdvisor.Infrastructrure",
-        "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj",
-        "packagesPath": "C:\\Users\\jt272\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Infrastructrure\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Infrastructrure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jt272\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,8 +184,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj": {
-                "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj"
+              "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj"
               }
             }
           }
@@ -215,21 +215,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj": {
+    "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj",
         "projectName": "MedAdvisor.Models",
-        "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj",
-        "packagesPath": "C:\\Users\\jt272\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Models\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jt272\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -270,21 +270,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj": {
+    "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj",
         "projectName": "MedAdvisor.Services.Okta",
-        "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj",
-        "packagesPath": "C:\\Users\\jt272\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Services.Okta\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Services.Okta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jt272\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -298,17 +298,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {
-                "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj"
+              "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj"
               },
-              "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj": {
-                "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj"
+              "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj"
               },
-              "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj": {
-                "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj"
+              "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj"
               },
-              "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj": {
-                "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj"
+              "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj"
               }
             }
           }
@@ -352,7 +352,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

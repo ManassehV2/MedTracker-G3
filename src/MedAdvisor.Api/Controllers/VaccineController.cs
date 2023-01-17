@@ -66,7 +66,7 @@ namespace MedAdvisor.Api.Controllers
             var vaccine = await _VaccineService.GetVaccine(id);
             var user = await _userService.GetUserById(User_Id);
 
-            var updated_user await _VaccineRepository.DeleteVaccineAsync(user, vaccine);
+            var updated_user =  await _VaccineRepository.DeleteVaccineAsync(user, vaccine);
             return Ok(updated_user);
 
         }

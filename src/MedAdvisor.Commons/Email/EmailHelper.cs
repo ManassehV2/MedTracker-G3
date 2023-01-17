@@ -7,20 +7,22 @@ using Microsoft.Extensions.Options;
 
 namespace rentX.Common.Email
 {
-    public  class EmailHelper
+    public class EmailHelper
     {
         private readonly IConfiguration _configuration;
+        private readonly MailSettings _mailSettings;
 
-        public  EmailHelper(IOptions<MailSettings> mailSettings)
+        public EmailHelper(IOptions<MailSettings> mailSettings)
         {
             _mailSettings = mailSettings.Value;
         }
-        public Task<bool> SendEmail(string userEmail)
+        public async Task<bool> SendEmail(string userEmail)
         {
             var From = _configuration.GetSection("EmailConfiguration:From").Value;
+            var UserName = _configuration.GetSection("EmailConfiguration:Username").Value;
             var Password = _configuration.GetSection("EmailConfiguration:Password").Value;
 
-          
+
             MailAddress to = new MailAddress(From);
             MailAddress from = new MailAddress(userEmail);
             MailMessage message = new MailMessage(from, to);
@@ -33,7 +35,7 @@ namespace rentX.Common.Email
             };
             try
             {
-                 client.Send(message);
+                client.Send(message);
                 return true;
             }
             catch (Exception ex)
