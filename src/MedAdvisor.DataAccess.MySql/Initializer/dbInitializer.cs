@@ -125,7 +125,7 @@ public class DataSeeder
         }
 
 
-                // diagnosis seed data
+        // diagnosis seed data
         if (!DbContext.Diagnosess.Any())
         {
             var diagnoseses = new List<Diagnoses>()
@@ -161,8 +161,6 @@ public class DataSeeder
             DbContext.SaveChanges();
 
         }
-
-
 
 
     }
