@@ -14,7 +14,7 @@ public class DataSeeder
 
 		if (!DbContext.Allergies.Any())
 		{
-			// allergy seed list 
+			// allergy seed list
 			var allergies = new List<Allergy>()
 			{
 				new Allergy()
@@ -43,13 +43,48 @@ public class DataSeeder
                     Code = "al005"
                 }
             };
-           
+
             DbContext.Allergies.AddRange(allergies);
             DbContext.SaveChanges();
 
         }
 
-}
+
+        // vaccine seed list
+        if (!DbContext.Vaccines.Any()){
+            var vaccines = new List<Vaccine>()
+            {
+                new Vaccine()
+                {
+                    Name = "addenovirus",
+                    Code = "va001"
+                },
+                new Vaccine()
+                {
+                    Name = "antherax",
+                    Code = "va002"
+                },
+                new Vaccine()
+                {
+                    Name = "colera",
+                    Code = "va003"
+                },
+                new Vaccine()
+                {
+                    Name = "hepitites",
+                    Code = "va004"
+                },
+                new Vaccine()
+                {
+                    Name = "covid",
+                    Code = "va005"
+                }
+
+            };
+            DbContext.Vaccines.AddRange(vaccines);
+            DbContext.SaveChanges();
+
+        }
 
 
 
