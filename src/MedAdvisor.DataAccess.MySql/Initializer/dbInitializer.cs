@@ -87,6 +87,45 @@ public class DataSeeder
         }
 
 
+        // medicine seed data
+        if (!DbContext.Medicines.Any())
+        {
+            var medicines = new List<Medicine>()
+            {
+                new Medicine()
+                {
+                    Name = "accetaminophene",
+                    Code = "med001"
+                },
+                new Medicine()
+                {
+                    Name = "adderl",
+                    Code = "med002"
+                },
+                new Medicine()
+                {
+                    Name = "amlodepine",
+                    Code = "med003"
+                },
+                new Medicine()
+                {
+                    Name = "antibiotics",
+                    Code = "med004"
+                },
+                new Medicine()
+                {
+                    Name = "losarphane",
+                    Code = "med005"
+                }
+            };
+
+            DbContext.Medicines.AddRange(medicines);
+            DbContext.SaveChanges();
+
+        }
+
+
+
 
     }
 }
