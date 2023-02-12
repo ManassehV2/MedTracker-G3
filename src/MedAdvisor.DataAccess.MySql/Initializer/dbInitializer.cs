@@ -125,6 +125,44 @@ public class DataSeeder
         }
 
 
+                // diagnosis seed data
+        if (!DbContext.Diagnosess.Any())
+        {
+            var diagnoseses = new List<Diagnoses>()
+            {
+                new Diagnoses()
+                {
+                    Name = "botulism",
+                    Code = "dg001"
+                },
+                new Diagnoses()
+                {
+                    Name = "ameobicliver",
+                    Code = "dg002"
+                },
+                new Diagnoses()
+                {
+                    Name = "cholera",
+                    Code = "dg003"
+                },
+                new Diagnoses()
+                {
+                    Name = "paratyphoyd",
+                    Code = "dg004"
+                },
+                new Diagnoses()
+                {
+                    Name = "antherax",
+                    Code = "dg005"
+                }
+
+            };
+            DbContext.Diagnosess.AddRange(diagnoseses);
+            DbContext.SaveChanges();
+
+        }
+
+
 
 
     }
