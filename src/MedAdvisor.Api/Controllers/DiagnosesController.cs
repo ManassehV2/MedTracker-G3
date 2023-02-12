@@ -55,7 +55,7 @@ namespace MedAdvisor.Api.Controllers
 
         }
 
-
+       // deleting diagnosisi
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> DeleteDiagnoses([FromRoute] Guid id)
