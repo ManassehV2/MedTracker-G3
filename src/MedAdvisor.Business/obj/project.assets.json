@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Medtracker\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
       "projectName": "MedAdvisor.Business",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Medtracker\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Medtracker\\src\\MedAdvisor.Business\\obj\\",
+      "projectPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
