@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "YVdtiCNNj7eSDqW/lqsLLm/tM/ZgofSN9ViljeMMsbeCyChInd86CBjxymG+uX9m+2J5b6KfY4k36lUOheuEKw==",
+  "dgSpecHash": "0x6GhTLdqq1bfIa/ApTTMzlNWqxRsNwst1f+JEDzAltNJq4cQQkT++IiY10SuWw6hUHoEOeCKHWr1c2Hpy9kZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Medtracker\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

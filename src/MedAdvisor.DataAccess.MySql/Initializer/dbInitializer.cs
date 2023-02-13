@@ -14,7 +14,7 @@ public class DataSeeder
 
 		if (!DbContext.Allergies.Any())
 		{
-			// allergy seed list
+			// allergy seed list 
 			var allergies = new List<Allergy>()
 			{
 				new Allergy()
@@ -43,7 +43,7 @@ public class DataSeeder
                     Code = "al005"
                 }
             };
-
+           
             DbContext.Allergies.AddRange(allergies);
             DbContext.SaveChanges();
 
@@ -87,7 +87,7 @@ public class DataSeeder
         }
 
 
-        // medicine seed data
+        // medicine seed data 
         if (!DbContext.Medicines.Any())
         {
             var medicines = new List<Medicine>()
@@ -125,7 +125,7 @@ public class DataSeeder
         }
 
 
-        // diagnosis seed data
+        // diagnosis seed data 
         if (!DbContext.Diagnosess.Any())
         {
             var diagnoseses = new List<Diagnoses>()
