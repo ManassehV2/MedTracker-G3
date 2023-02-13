@@ -2,8 +2,6 @@
 
 [![SonarCloud](https://github.com/ManassehV2/MedTracker-G3/actions/workflows/dotnet.yml/badge.svg)](https://github.com/ManassehV2/MedTracker-G3/actions/workflows/dotnet.yml)
 
-
-# MedTracker-G1
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ManassehV2_MedTracker-G3&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ManassehV2_MedTracker-G3)
 
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ManassehV2_MedTracker-G3&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=ManassehV2_MedTracker-G3)
