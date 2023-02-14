@@ -10,16 +10,14 @@ namespace rentX.Common.Email
     public  class EmailHelper
     {
         private readonly IConfiguration _configuration;
-        private readonly MailSettings _mailSettings;
 
         public  EmailHelper(IOptions<MailSettings> mailSettings)
         {
             _mailSettings = mailSettings.Value;
         }
-        public async Task<bool> SendEmail(string userEmail)
+        public Task<bool> SendEmail(string userEmail)
         {
             var From = _configuration.GetSection("EmailConfiguration:From").Value;
-            var UserName = _configuration.GetSection("EmailConfiguration:Username").Value;
             var Password = _configuration.GetSection("EmailConfiguration:Password").Value;
 
           
@@ -40,7 +38,7 @@ namespace rentX.Common.Email
             }
             catch (Exception ex)
             {
-                var a = "test";
+                throw ex;
             }
             return false;
         }
