@@ -48,11 +48,10 @@ namespace MedAdvisor.Api.tests.Controllers
             _userServiceMock.Setup(x => x.GetUserById(user_id)).ReturnsAsync(user);
 
             // Act
-            var result = _sut.AddAllergy(allergy_id).ConfigureAwait(false);
+            var result = await _sut.AddAllergy(allergy_id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
-            //result.Should().BeAssignableTo<ActionResult<User>>();
         }
 
 
@@ -62,16 +61,13 @@ namespace MedAdvisor.Api.tests.Controllers
             // Arrange
             Guid allergy_id = _fixture.Create<Guid>();
             string EmptyToken = "";
-            string NullToken = null;
 
             // Act
-            _sut.AddAllergy(allergy_id).ConfigureAwait(false);
+            await _sut.AddAllergy(allergy_id).ConfigureAwait(false);
             var Emptyresult = string.IsNullOrEmpty(EmptyToken);
-            var NullResult = string.IsNullOrEmpty(NullToken);
 
             // Assert
             Emptyresult.Should().Be(true);
-            NullResult.Should().Be(true);
         }
 
 
@@ -89,7 +85,7 @@ namespace MedAdvisor.Api.tests.Controllers
             _allergyRepoMock.Setup(x => x.DeleteAllergyAsync(user, allergy)).ReturnsAsync(user);
 
             // Act
-            var result = _sut.DeleteAllergy(allergy_id).ConfigureAwait(false);
+            var result = await _sut.DeleteAllergy(allergy_id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -102,10 +98,10 @@ namespace MedAdvisor.Api.tests.Controllers
             // Arrange
             Guid allergy_id = _fixture.Create<Guid>();
             string EmptyToken = "";
-            string NullToken = null;
+            string? NullToken = null;
 
             // Act
-            _sut.DeleteAllergy(allergy_id).ConfigureAwait(true);
+            await _sut.DeleteAllergy(allergy_id).ConfigureAwait(true);
             var Emptyresult = string.IsNullOrEmpty(EmptyToken);
             var NullResult = string.IsNullOrEmpty(NullToken);
 
