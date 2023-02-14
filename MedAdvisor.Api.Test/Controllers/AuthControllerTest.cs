@@ -89,8 +89,8 @@ namespace MedAdvisor.Api.tests.Controllers
 
             // Arrange
             var LoginDtoModel = _fixture.Create<UserLoginDto>();
-            User userResponse = null;
-            _userServiceMock.Setup(x => x.FetchUserData(LoginDtoModel.Email)).ReturnsAsync(userResponse);
+            //User? userResponse = null;
+            //_userServiceMock.Setup(x => x.FetchUserData(LoginDtoModel.Email)).ReturnsAsync(userResponse);
 
             // Act
             var result = await _sut.Login(LoginDtoModel).ConfigureAwait(false);
