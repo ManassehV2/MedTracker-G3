@@ -1,5 +1,4 @@
 ﻿
-using MedAdvisor.DataAccess.MySql.DataContext;
 using MedAdvisor.DataAccess.MySql.Repositories;
 using MedAdvisor.Services.Okta.Interfaces;
 using Microsoft.Extensions.Primitives;
@@ -18,24 +17,19 @@ namespace MedAdvisor.Api.Controllers
         private readonly IAllergyService _AllergyService;
         private readonly IUserServices _userService;
         private readonly IAuthService _AuthService;
-        private readonly AppDbContext _db;
         
         public AllergiesController(
             IAllergyRepository allergyRepository,
             IAllergyService allergyService,
             IUserServices userService,
-            IAuthService authService,
-            AppDbContext dbContext
+            IAuthService authService
             )
         {
             _AllrgiesRepository = allergyRepository;
             _AllergyService = allergyService;
             _userService = userService;
             _AuthService = authService;
-            _db = dbContext;
-
         }
-
 
 
         [HttpPost]
@@ -76,6 +70,7 @@ namespace MedAdvisor.Api.Controllers
            
         }
 
+
         [HttpGet]
         [Route("search")]
         public async Task<IEnumerable<Allergy>> search(string name)
@@ -84,12 +79,6 @@ namespace MedAdvisor.Api.Controllers
             return allergies_list;
             
         }
-
-
-
-
-
-
 
     }
 }
