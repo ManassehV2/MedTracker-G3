@@ -16,22 +16,18 @@ namespace MedAdvisor.Api.Controllers
         private readonly IVaccineService _VaccineService;
         private readonly IUserServices _userService;
         private readonly IAuthService _AuthService;
-        private readonly AppDbContext _db;
 
         public VaccineController(
             IVaccineRepository vaccineRepository,
             IVaccineService vaccineService,
             IUserServices userService,
-            IAuthService authService,
-            AppDbContext dbContext
+            IAuthService authService
             )
         {
             _VaccineRepository = vaccineRepository;
             _VaccineService = vaccineService;
             _userService = userService;
             _AuthService = authService;
-            _db = dbContext;
-
         }
 
 
@@ -74,6 +70,7 @@ namespace MedAdvisor.Api.Controllers
             return Ok(updated_user);
 
         }
+
 
         [HttpGet]
         [Route("search")]
