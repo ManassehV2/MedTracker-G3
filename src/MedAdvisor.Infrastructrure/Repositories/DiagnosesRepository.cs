@@ -33,7 +33,7 @@ namespace MedAdvisor.Infrastructrure.Repositories
         {
             var diagnoses = await _db.Diagnosess.Include(a => a.Users)
            .FirstOrDefaultAsync(a => a.DiagnosesId == id);
-            return diagnoses;
+            return diagnoses!;
         }
 
         public async Task<IEnumerable<Diagnoses>> SearchDiagnoses(string name)

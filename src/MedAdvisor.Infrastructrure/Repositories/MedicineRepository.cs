@@ -19,21 +19,21 @@ namespace MedAdvisor.Infrastructrure.Repositories
         {
             var medicine = await _db.Medicines.Include(a => a.Users)
             .FirstOrDefaultAsync(a => a.MedicineId == id);
-            return medicine;
+            return medicine!;
         }
         public async Task<User> AddMedicineAsync(User user, Medicine medicine)
         {
             user?.Medicines?.Add(medicine);
-            medicine?.Users?.Add(user);
+            medicine?.Users?.Add(user!);
             await _db.SaveChangesAsync();
-            return user;
+            return user!;
         }
 
         public async Task<User> DeleteMedicineAsync(User user, Medicine medicine)
         {
             user?.Medicines?.Remove(medicine);
             await _db.SaveChangesAsync();
-            return user;
+            return user!;
         }
 
 

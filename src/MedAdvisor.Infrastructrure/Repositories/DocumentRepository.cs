@@ -25,9 +25,9 @@ namespace MedAdvisor.Infrastructrure.Repositories
             return document;
         }
 
-        public async Task  DeleteDocumentAsync(Document doc)
+        public async Task  DeleteDocumentAsync(Document document)
         {
-             _db.Documents.Remove(doc);
+             _db.Documents.Remove(document);
             await _db.SaveChangesAsync();
         }
 
@@ -36,7 +36,7 @@ namespace MedAdvisor.Infrastructrure.Repositories
         {
             var document = await _db.Documents
            .FirstOrDefaultAsync(a => a.DocumentId == id);
-            return document;
+            return document!;
         }
 
         public async Task<Document> UdpdateDocumentAsync(Document document)

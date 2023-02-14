@@ -21,15 +21,15 @@ namespace MedAdvisor.DataAccess.MySql.Repositories.Allergies
         {
             var allergy = await _db.Allergies.Include(a => a.Users)
            .FirstOrDefaultAsync(a => a.Id == id);
-            return allergy;
+            return allergy!;
         }
 
         public async Task<User> AddAllergyAsync(User user ,Allergy allergy)
         {
             user?.Allergies?.Add(allergy);
-            allergy?.Users?.Add(user);
+            allergy?.Users?.Add(user!);
             await _db.SaveChangesAsync();
-            return user;
+            return user!;
 
         }
 
@@ -46,7 +46,7 @@ namespace MedAdvisor.DataAccess.MySql.Repositories.Allergies
         {
             user?.Allergies?.Remove(allergy);
             await _db.SaveChangesAsync();
-            return user;
+            return user!;
         }
     }
 }

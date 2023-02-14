@@ -22,7 +22,7 @@ namespace MedAdvisor.Infrastructrure.Repositories
             user.Profile = profile;
             await _db.UserProfiles.AddAsync(profile);
             await _db.SaveChangesAsync();
-            return profile;
+            return profile!;
         }
 
         public async Task<UserProfile> GetProfile(Guid userId)
@@ -30,14 +30,14 @@ namespace MedAdvisor.Infrastructrure.Repositories
             var profile = await _db.UserProfiles.FirstOrDefaultAsync(
                            profile => profile.UserId == userId);
        
-            return profile;
+            return profile!;
         }
 
         public async Task<UserProfile> UdpdateProfile(UserProfile profile)
         {
             _db.UserProfiles.Update(profile);
             await _db.SaveChangesAsync();
-            return profile;
+            return profile!;
         }
     }
 }

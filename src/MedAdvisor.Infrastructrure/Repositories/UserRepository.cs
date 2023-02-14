@@ -13,11 +13,11 @@ namespace MedAdvisor.DataAccess.MySql.Repositories.Users
           _db = dbContext;   
         }
 
-        public async Task<User> AddUserAsync(User new_user)
+        public async Task<User> AddUserAsync(User user)
         {
-            await _db.Users.AddAsync(new_user);
+            await _db.Users.AddAsync(user);
             await _db.SaveChangesAsync();
-            return new_user;
+            return user;
         }
 
         public async Task<User> FetchUserData(string email)
@@ -29,7 +29,7 @@ namespace MedAdvisor.DataAccess.MySql.Repositories.Users
                 .Include(u=>u.Diagnoses)
                 .Include(u=>u.Documents)
                 .FirstOrDefaultAsync(user => user.Email == email);
-            return user;
+            return user!;
         }
 
 
@@ -37,14 +37,14 @@ namespace MedAdvisor.DataAccess.MySql.Repositories.Users
         {
             var user = await _db.Users.FirstOrDefaultAsync(
                            user => user.Email == email);
-            return user;
+            return user!;
         }
 
         public async Task<User> GetUserById(Guid id)
         {
             var user = await _db.Users
                 .FirstOrDefaultAsync(u => u.UserId == id);
-            return user;
+            return user!;
         }
     }
 }
