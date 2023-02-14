@@ -61,7 +61,7 @@ namespace MedAdvisor.Api.tests.Controllers
             _documentServiceMock.Setup(x => x.uploadFile(user, doc)).ReturnsAsync(doc);
 
             // Act
-            var result = _sut.AddDocument(document).ConfigureAwait(false);
+            var result = await _sut.AddDocument(document).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -73,12 +73,12 @@ namespace MedAdvisor.Api.tests.Controllers
         public async Task AddDocument_ShouldReturnBadRequest_WhenDocumentIsNull()
         {
             // Arrange
-            FileUploadDto document = new FileUploadDto();
+            FileUploadDto document = new();
             string EmptyToken = "";
-            User NullUser = null;
+            User? NullUser = null;
 
             // Act
-            _sut.AddDocument(document).ConfigureAwait(true);
+            await _sut.AddDocument(document).ConfigureAwait(true);
             var Emptyresult = string.IsNullOrEmpty(EmptyToken);
 
             // Assert
@@ -99,7 +99,7 @@ namespace MedAdvisor.Api.tests.Controllers
             _documentRepoMock.Setup(s => s.DeleteDocumentAsync(document)).Returns(Task.FromResult(true));
 
             // Act
-            var result = _sut.DeleteDocument(document_id).ConfigureAwait(false);
+            var result = await _sut.DeleteDocument(document_id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -112,10 +112,10 @@ namespace MedAdvisor.Api.tests.Controllers
         {
             // Arrange
             Guid document_id = _fixture.Create<Guid>();
-            Document NullDocument = null;
+            Document? NullDocument = null;
 
             // Act
-            _sut.DeleteDocument(document_id).ConfigureAwait(false);
+            await _sut.DeleteDocument(document_id).ConfigureAwait(false);
 
             // Assert
             NullDocument.Should().Be(null);

@@ -46,7 +46,7 @@ namespace MedAdvisor.Api.tests.Controllers
             _userServiceMock.Setup(x => x.GetUserById(user_id)).ReturnsAsync(user);
 
             // Act
-            var result = _sut.AddDiagnoses(diagnose_id).ConfigureAwait(false);
+            var result = await _sut.AddDiagnoses(diagnose_id).ConfigureAwait(false);
 
 
             // Assert
@@ -61,10 +61,10 @@ namespace MedAdvisor.Api.tests.Controllers
             // Arrange
             Guid diagnose_id = _fixture.Create<Guid>();
             string EmptyToken = "";
-            string NullToken = null;
+            string? NullToken = null;
 
             // Act
-            _sut.AddDiagnoses(diagnose_id).ConfigureAwait(false);
+            await _sut.AddDiagnoses(diagnose_id).ConfigureAwait(false);
             var Emptyresult = string.IsNullOrEmpty(EmptyToken);
             var NullResult = string.IsNullOrEmpty(NullToken);
 
@@ -88,7 +88,7 @@ namespace MedAdvisor.Api.tests.Controllers
             _diagnosesRepoMock.Setup(x => x.DeleteDiagnosesAsync(user, diagnose)).ReturnsAsync(user);
 
             // Act
-            var result = _sut.DeleteDiagnoses(diagnose_id).ConfigureAwait(false);
+            var result = await _sut.DeleteDiagnoses(diagnose_id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -103,10 +103,10 @@ namespace MedAdvisor.Api.tests.Controllers
             // Arrange
             Guid diagnose_id = _fixture.Create<Guid>();
             string EmptyToken = "";
-            string NullToken = null;
+            string? NullToken = null;
 
             // Act
-            _sut.DeleteDiagnoses(diagnose_id).ConfigureAwait(true);
+            await _sut.DeleteDiagnoses(diagnose_id).ConfigureAwait(true);
             var Emptyresult = string.IsNullOrEmpty(EmptyToken);
             var NullResult = string.IsNullOrEmpty(NullToken);
 
