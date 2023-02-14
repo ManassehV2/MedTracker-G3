@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj": {}
+    "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj": {
+    "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
         "projectName": "MedAdvisor.Business",
-        "projectPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Business\\obj\\",
+        "projectPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

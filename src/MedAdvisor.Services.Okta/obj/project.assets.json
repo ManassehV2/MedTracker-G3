@@ -1640,19 +1640,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj",
       "projectName": "MedAdvisor.Services.Okta",
-      "projectPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Services.Okta\\obj\\",
+      "projectPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Services.Okta\\MedAdvisor.Services.Okta.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Services.Okta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1666,17 +1666,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {
-              "projectPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj"
+            "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {
+              "projectPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj"
             },
-            "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj": {
-              "projectPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj"
+            "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj": {
+              "projectPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.DataAccess.MySql\\MedAdvisor.DataAccess.MySql.csproj"
             },
-            "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj": {
-              "projectPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj"
+            "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj": {
+              "projectPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Infrastructrure\\MedAdvisor.Infrastructrure.csproj"
             },
-            "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj": {
-              "projectPath": "C:\\Users\\pc\\Desktop\\minase-final\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj"
+            "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj": {
+              "projectPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Models\\MedAdvisor.Models.csproj"
             }
           }
         }
