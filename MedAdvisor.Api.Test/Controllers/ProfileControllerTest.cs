@@ -46,7 +46,7 @@ namespace MedAdvisor.Api.tests.Controllers
             _profileServiceMock.Setup(x => x.GetProfile(user_id)).ReturnsAsync(profile);
 
             // Act
-            var result = _sut.getProfile().ConfigureAwait(false);
+            var result = await _sut.getProfile().ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -59,12 +59,10 @@ namespace MedAdvisor.Api.tests.Controllers
         {
             // Arrange
             string? EmptyToken = "";
-            //string NullToken = null;
 
             // Act
-            //_sut.getProfile().ConfigureAwait(false);
+            await _sut.getProfile().ConfigureAwait(false);
             var Emptyresult = string.IsNullOrEmpty(EmptyToken);
-            //var NullResult = string.IsNullOrEmpty(NullToken);
 
             // Assert
             Emptyresult.Should().Be(true);
@@ -89,7 +87,7 @@ namespace MedAdvisor.Api.tests.Controllers
             _mapper.Setup(x => x.Map(profileDataDto, profile)).Returns(mappedProfile);
 
             // Act
-            var result = _sut.UpdateProfile(profileDataDto).ConfigureAwait(false);
+            var result = await _sut.UpdateProfile(profileDataDto).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -103,10 +101,10 @@ namespace MedAdvisor.Api.tests.Controllers
             // Arrange
             var profileDataDto = _fixture.Create<AddProfileDto>();
             string EmptyToken = "";
-            string NullToken = null;
+            string? NullToken = null;
 
             // Act
-            _sut.UpdateProfile(profileDataDto).ConfigureAwait(true);
+            await _sut.UpdateProfile(profileDataDto).ConfigureAwait(true);
             var Emptyresult = string.IsNullOrEmpty(EmptyToken);
             var NullResult = string.IsNullOrEmpty(NullToken);
 
