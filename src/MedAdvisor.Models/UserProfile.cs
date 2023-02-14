@@ -8,7 +8,7 @@ namespace MedAdvisor.Models
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public DateTime DateOfBirth { get; set; }
-        public string Gender { get; set; }
+        public string? Gender { get; set; }
         public int CPRNumber { get; set; }
         public int TlfNumber { get; set; }
         public string? Nationality { get; set; }
@@ -27,6 +27,6 @@ namespace MedAdvisor.Models
         public string? Relationship { get; set; }
         public string? Other { get; set; }
         public Guid UserId { get; set; }
-        public User User { get; set; }
+        public User? User { get; set; }
     }
 }
