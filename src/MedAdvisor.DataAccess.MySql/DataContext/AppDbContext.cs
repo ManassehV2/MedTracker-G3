@@ -48,7 +48,6 @@ namespace MedAdvisor.DataAccess.MySql.DataContext
                 .WithMany(u => u.Documents)
                 .HasForeignKey(d => d.UserId);
 
-            //new AllergyInitializer(modelBuilder).Seed();
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Allergy> Allergies { get; set; }
