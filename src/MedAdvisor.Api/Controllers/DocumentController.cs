@@ -108,7 +108,7 @@ namespace MedAdvisor.Api.Controllers
             }
             using (var stream = new FileStream(absolutePath, FileMode.Create))
             {
-                document?.File.CopyTo(stream);
+                document?.File?.CopyTo(stream);
             }
 
             _mapper.Map(document, fetched_document);

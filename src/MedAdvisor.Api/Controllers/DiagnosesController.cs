@@ -46,7 +46,7 @@ namespace MedAdvisor.Api.Controllers
             var User_Id = _AuthService.GetId(token);
             var allergy = await _diagnosesService.GetDiagnoses(id);
             var user = await _userService.GetUserById(User_Id);
-            var saved_user = await _diagnosesRepository.AddDiagnosesAsync(user, allergy);
+            await _diagnosesRepository.AddDiagnosesAsync(user, allergy);
             return Ok(user);
 
         }

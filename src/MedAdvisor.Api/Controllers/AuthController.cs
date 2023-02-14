@@ -63,14 +63,6 @@ public class AuthController : ControllerBase
     }
 
 
-    [HttpGet]
-    [Route("test")]
-    public async Task<IActionResult> Test()
-    {
-        return BadRequest();
-
-    }
-
     [HttpPost]
     [Route("login")]
     public async Task<IActionResult> Login([FromBody] UserLoginDto model)

@@ -46,7 +46,7 @@ namespace MedAdvisor.Api.Controllers
             var medicine = await _MedicineService.GetMedicine(id);
             var user = await _userService.GetUserById(User_Id);
 
-            var saved_user = await _MedicineRepository.AddMedicineAsync(user, medicine);
+            await _MedicineRepository.AddMedicineAsync(user, medicine);
             return Ok(user);
 
         }

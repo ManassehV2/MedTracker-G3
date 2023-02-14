@@ -137,7 +137,6 @@ builder.Services.AddSwaggerGen(c => {
                         Id = "Bearer"
                 }
             },
-            new string[] {}
         }
     });
 });
@@ -154,17 +153,16 @@ if (args.Length == 1 && args[0].ToLower() == "seeddata")
 void SeedData(IHost app)
 {
     var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
-    using (var scope = scopedFactory.CreateScope())
+    using (var scope = scopedFactory?.CreateScope())
     {
         var service = scope.ServiceProvider.GetService<DataSeeder>();
-        service.Seed();
+        service?.Seed();
     }
 }
 
 app.UseCors();
 
 app.UseStaticFiles();
-//app.UseCors(options => options.AllowAnyOrigin());
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(Path
