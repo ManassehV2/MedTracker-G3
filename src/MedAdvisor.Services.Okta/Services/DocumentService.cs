@@ -22,9 +22,9 @@ namespace MedAdvisor.Services.Okta.Services
                 var doc = await  _documentRepository.GetDocumentById(id);
                 return doc;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
