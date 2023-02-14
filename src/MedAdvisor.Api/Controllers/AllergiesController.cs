@@ -45,7 +45,7 @@ namespace MedAdvisor.Api.Controllers
             var allergy = await _AllergyService.Get(id);
             var user = await _userService.GetUserById(User_Id);
 
-            var saved_user = await _AllrgiesRepository.AddAllergyAsync(user, allergy);
+            await _AllrgiesRepository.AddAllergyAsync(user, allergy);
              return Ok(user);
 
         }
