@@ -34,7 +34,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _vaccineRepoMock.Setup(x => x.GetVaccine(vaccine_Id)).ReturnsAsync(vaccine);
 
             // Act
-            var result = _sut.GetVaccine(vaccine_Id).ConfigureAwait(false);
+            var result = await _sut.GetVaccine(vaccine_Id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();

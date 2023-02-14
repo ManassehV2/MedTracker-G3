@@ -34,7 +34,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _diagnosesRepoMock.Setup(x => x.GetDiagnoses(diagnose_Id)).ReturnsAsync(diagnose);
 
             // Act
-            var result = _sut.GetDiagnoses(diagnose_Id).ConfigureAwait(false);
+            var result = await _sut.GetDiagnoses(diagnose_Id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();

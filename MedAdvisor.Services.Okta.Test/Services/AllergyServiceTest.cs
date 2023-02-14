@@ -35,7 +35,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _allergyRepoMock.Setup(x => x.GetAllergy(allergy_Id)).ReturnsAsync(allergy);
 
             // Act
-            var result = _sut.Get(allergy_Id).ConfigureAwait(false);
+            var result = await _sut.Get(allergy_Id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();

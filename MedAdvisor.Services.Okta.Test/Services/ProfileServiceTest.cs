@@ -34,7 +34,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _profileRepoMock.Setup(x => x.AddProfileAsync(user_profile, user)).ReturnsAsync(new_profile);
 
             // Act
-            var result = _sut.AddProfile(user_profile, user).ConfigureAwait(false);
+            var result = await _sut.AddProfile(user_profile, user).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -50,7 +50,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _profileRepoMock.Setup(x => x.GetProfile(profile_Id)).ReturnsAsync(profile);
 
             // Act
-            var result = _sut.GetProfile(profile_Id).ConfigureAwait(false);
+            var result = await _sut.GetProfile(profile_Id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -67,7 +67,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _profileRepoMock.Setup(x => x.UdpdateProfile(prevProfile)).ReturnsAsync(newProfile);
 
             // Act
-            var result = _sut.updateProfile(prevProfile).ConfigureAwait(false);
+            var result = await _sut.updateProfile(prevProfile).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();

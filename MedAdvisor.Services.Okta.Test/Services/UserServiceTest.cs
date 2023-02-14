@@ -33,7 +33,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _userRepoMock.Setup(x => x.GetUserById(user_Id)).ReturnsAsync(user);
 
             // Act
-            var result = _sut.GetUserById(user_Id).ConfigureAwait(false);
+            var result = await _sut.GetUserById(user_Id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -49,7 +49,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _userRepoMock.Setup(x => x.GetUserByEmail(user_Email)).ReturnsAsync(user);
 
             // Act
-            var result = _sut.GetUserByEmail(user_Email).ConfigureAwait(false);
+            var result = await _sut.GetUserByEmail(user_Email).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -66,7 +66,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _userRepoMock.Setup(x => x.FetchUserData(user_Email)).ReturnsAsync(user);
 
             // Act
-            var result = _sut.FetchUserData(user_Email).ConfigureAwait(false);
+            var result = await _sut.FetchUserData(user_Email).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();

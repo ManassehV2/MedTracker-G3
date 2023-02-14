@@ -34,7 +34,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _documentRepoMock.Setup(x => x.GetDocumentById(document_Id)).ReturnsAsync(document);
 
             // Act
-            var result = _sut.getDocumentById(document_Id).ConfigureAwait(false);
+            var result = await _sut.getDocumentById(document_Id).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -51,7 +51,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
             _documentRepoMock.Setup(x => x.UdpdateDocumentAsync(document)).ReturnsAsync(document);
 
             // Act
-            var result = _sut.updateDocument(document).ConfigureAwait(false);
+            var result = await _sut.updateDocument(document).ConfigureAwait(false);
 
             // Assert
             result.Should().NotBeNull();
@@ -61,7 +61,7 @@ namespace MeAdvisor.Servises.Okta.tests.Services
 
 
         [Fact]
-        public async Task DeleteDocument_ShouldReturnOkResponse()
+        public void DeleteDocument_ShouldReturnOkResponse()
         {
             // Arrange
             var document = _fixture.Create<Document>();
