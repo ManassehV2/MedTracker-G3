@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj": {}
+    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj": {
+    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
+        "projectUniqueName": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
         "projectName": "MedAdvisor.Business",
-        "projectPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\MedTracker-G3\\src\\MedAdvisor.Business\\obj\\",
+        "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
+        "packagesPath": "C:\\Users\\jt272\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jt272\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
