@@ -5,6 +5,7 @@ using AutoMapper;
 using MedAdvisor.Commons.Email;
 using MedAdvisor.DataAccess.MySql;
 using MedAdvisor.DataAccess.MySql.DataContext;
+using MedAdvisor.DataAccess.MySql.Initializer;
 using MedAdvisor.DataAccess.MySql.Repositories;
 using MedAdvisor.DataAccess.MySql.Repositories.Allergies;
 using MedAdvisor.DataAccess.MySql.Repositories.Users;
@@ -15,7 +16,6 @@ using MedAdvisor.Services.Okta.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -34,7 +34,7 @@ builder.Services.AddScoped<ImedicineRepository, MedicineRepository>();
 builder.Services.AddScoped<IVaccineService, VaccineService>();
 builder.Services.AddScoped<IVaccineRepository, VaccineRepository>();
 builder.Services.AddScoped<IDiagnosesService, DiagnosesService>();
-builder.Services.AddScoped<IDiagnosesRepository,DiagnosesRepository>();
+builder.Services.AddScoped<IDiagnosesRepository, DiagnosesRepository>();
 builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
 builder.Services.AddScoped<IDocumentService, DocumentService>();
 builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
@@ -44,7 +44,6 @@ System.Net.ServicePointManager.Expect100Continue = false;
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 // adding data seeder initializer
 builder.Services.AddTransient<DataSeeder>();
-
 
 // Auto Mapper Configurations  
 var mappingConfig = new MapperConfiguration(mc => {
@@ -191,7 +190,6 @@ app.MapControllers();
 
 
 app.Run();
-
 
 
 public partial class Program { };

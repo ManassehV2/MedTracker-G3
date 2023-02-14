@@ -16,21 +16,18 @@ namespace MedAdvisor.Api.Controllers
         private readonly IVaccineService _VaccineService;
         private readonly IUserServices _userService;
         private readonly IAuthService _AuthService;
-        private readonly AppDbContext _db;
 
         public VaccineController(
             IVaccineRepository vaccineRepository,
             IVaccineService vaccineService,
             IUserServices userService,
-            IAuthService authService,
-            AppDbContext dbContext
+            IAuthService authService
             )
         {
             _VaccineRepository = vaccineRepository;
             _VaccineService = vaccineService;
             _userService = userService;
             _AuthService = authService;
-            _db = dbContext;
 
         }
 
@@ -50,7 +47,7 @@ namespace MedAdvisor.Api.Controllers
             var vaccine = await _VaccineService.GetVaccine(id);
             var user = await _userService.GetUserById(User_Id);
 
-            var saved_user = await _VaccineRepository.AddVaccineAsync(user, vaccine);
+            await _VaccineRepository.AddVaccineAsync(user, vaccine);
             return Ok(user);
 
         }
