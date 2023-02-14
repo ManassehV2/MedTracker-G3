@@ -22,7 +22,6 @@ public class AuthController : ControllerBase
         IUserRepository userRepository,
         IUserServices userService,
         IAuthService authService
-       
         )
     {
         _userRepository = userRepository;
@@ -30,7 +29,6 @@ public class AuthController : ControllerBase
         _userService = userService;
     }
 
-   
 
     [HttpPost]
     [Route("register")]
@@ -63,7 +61,6 @@ public class AuthController : ControllerBase
         }
         return BadRequest();
     }
-
 
 
     [HttpGet]
@@ -103,7 +100,6 @@ public class AuthController : ControllerBase
 
     [HttpPost]
     [Route("logIn/google")]
-
     public async Task<IActionResult> GoggleLogin(ExternalLoginDto resource)
     {
         var payload = await _authService.VerifyGoogleToken(resource.AccessToken);
@@ -123,10 +119,7 @@ public class AuthController : ControllerBase
             return Ok(new RegistrationResponse("success", user));
         }
         return Ok(new RegistrationResponse("success", user_exist));
-
-
     }
-
 
 
     [HttpPost("password/forgot")]
@@ -142,9 +135,6 @@ public class AuthController : ControllerBase
         return Ok(response);
        
     }
-
-
-
 }
 
 
