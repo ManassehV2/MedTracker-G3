@@ -63,6 +63,7 @@ namespace MedAdvisor.IntegrationTests
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
 
+        //Task DeleteAllergy_ReturnsBadRequest()
         [Fact]
         public async Task DeleteAllergy_ReturnsBadRequest()
         {
