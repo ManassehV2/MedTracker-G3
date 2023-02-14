@@ -18,22 +18,18 @@ namespace MedAdvisor.Api.Controllers
         private readonly IDiagnosesService _diagnosesService;
         private readonly IUserServices _userService;
         private readonly IAuthService _AuthService;
-        private readonly AppDbContext _db;
 
         public DiagnosesController(
             IDiagnosesRepository diagnosesRepository,
             IDiagnosesService diagnosesService,
             IUserServices userService,
-            IAuthService authService,
-            AppDbContext dbContext
+            IAuthService authService
             )
         {
             _diagnosesRepository = diagnosesRepository;
             _diagnosesService = diagnosesService;
             _userService = userService;
             _AuthService = authService;
-            _db = dbContext;
-
         }
 
 
@@ -74,6 +70,7 @@ namespace MedAdvisor.Api.Controllers
             return Ok(updated_user);
 
         }
+
 
         [HttpGet]
         [Route("search")]
