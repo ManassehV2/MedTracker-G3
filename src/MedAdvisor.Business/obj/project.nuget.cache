@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NgqQNEqVHj7UnJcO0k+h25nmkD4HEzKVRBNf49G7tGMuNjJ+khggHWA6LoJHNVlNechdwUVSO0L5txse2qwUAQ==",
+  "dgSpecHash": "GgOfnrUDDUoWSaqZd8GId/qM99iU/tFjVy7SzSkpz2HZqiY36OKI8aCT8avobFvIw8f/DK7lyhNkqp4K1XX6Uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
+  "projectFilePath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Business\\MedAdvisor.Business.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {}
+    "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {
+    "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
         "projectName": "MedAdvisor.Commons",
-        "projectPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
-        "packagesPath": "C:\\Users\\jt272\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jt272\\OneDrive\\Documents\\IV-year-I-semester\\EAD\\Minase's\\MedTracker-G3\\src\\MedAdvisor.Commons\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\MedAdvisor.Commons.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\dotNet Projects\\Med-Advisor\\src\\MedAdvisor.Commons\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jt272\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

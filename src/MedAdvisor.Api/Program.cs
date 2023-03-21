@@ -5,6 +5,7 @@ using AutoMapper;
 using MedAdvisor.Commons.Email;
 using MedAdvisor.DataAccess.MySql;
 using MedAdvisor.DataAccess.MySql.DataContext;
+using MedAdvisor.DataAccess.MySql.Initializer;
 using MedAdvisor.DataAccess.MySql.Repositories;
 using MedAdvisor.DataAccess.MySql.Repositories.Allergies;
 using MedAdvisor.DataAccess.MySql.Repositories.Users;
@@ -137,6 +138,7 @@ builder.Services.AddSwaggerGen(c => {
                         Id = "Bearer"
                 }
             },
+            new string[] {}
         }
     });
 });
